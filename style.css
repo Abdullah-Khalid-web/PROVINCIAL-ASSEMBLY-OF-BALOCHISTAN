@@ -947,6 +947,10 @@ header .calendar-current-date {
     color: white;
 }
 
+.newsupdate1detailheader{
+    display: flex;
+    align-items: center;
+}
 .section3 .newsupdate .newsupdate1detail {
     padding: 20px;
     max-height: 350px;
@@ -1094,7 +1098,7 @@ header .calendar-current-date {
 
 .carousel-control-prev,
 .carousel-control-next {
-    background-color: rgb(84, 191, 191);
+    background-color: #2b8c82;
     border: none;
     padding: 20px;
     cursor: pointer;
