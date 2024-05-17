@@ -11,7 +11,9 @@ main {
     /* padding: 10px; */
     overflow-y: hidden;
 }
-
+.bolder{
+    font-weight: bold;
+}
 .hide {
     display: none;
 }
@@ -146,40 +148,6 @@ main {
     width: 20px;
 }
 
-/* .search {
-    background-color: #2a8c82;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-
-.searchshow {
-    width: 200px;
-    display: block;
-
-}
-
-.search input[type="text"] {
-    background-color: #2a8c82;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 16px;
-    outline: none;
-}
-
-.search input[type="text"]::placeholder {
-    color: white;
-    opacity: 0.7;
-}
-
-.search input[type="text"]:hover {
-    background-color: #2a8c82;
-}
-
-.search input[type="text"]:focus {
-    background-color: #2a8c82;
-} */
 
 /* search */
 .input-wrapper {
@@ -252,7 +220,7 @@ main {
 
 .midheader {
     display: flex;
-    height: 200px;
+    min-height: 200px;
     padding: 10px;
     padding: 0 50px;
     align-items: center;
@@ -575,7 +543,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-    margin: 10px;
+    margin: 5px;
     text-align: center;
 
 }
@@ -634,7 +602,7 @@ main {
     text-align: center;
     background-color: white;
     /* border: 5px solid black; */
-    margin: 10px;
+    margin: 5px;
 
 }
 
@@ -778,14 +746,18 @@ main {
     background: #fff;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
     flex: 1;
-    margin: 15px;
+    margin: 5px;
     margin-bottom: 0px;
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    flex-grow: 1;
+    /* justify-content: center; */
+
 }
 
 .calendar-container h1 {
+
     text-align: center;
     background-color: rgb(18, 134, 134);
     color: white;
@@ -803,6 +775,11 @@ main {
 
 header .calendar-navigation {
     display: flex;
+    box-shadow: inset 0 0 10px #0000001a;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
 }
 
 header .calendar-navigation span {
@@ -829,16 +806,17 @@ header .calendar-navigation span:hover {
 header .calendar-current-date {
     font-weight: 500;
     font-size: 1.45rem;
+
 }
 
 .calendar-body {
     padding: 10px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 10px #0000001a;
     margin: 10px;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
     text-align: center;
-    flex-grow: 1;
     min-width: 300px;
 }
 
@@ -966,13 +944,13 @@ header .calendar-current-date {
 .section3 {
     display: flex;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 5px;
 }
 
 .section3 .map {
     flex: 1;
     background-color: white;
-    margin: 10px;
+    margin: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1104,8 +1082,8 @@ header .calendar-current-date {
 .section3 .newsupdate .newsupdate1detail p {
     overflow: hidden;
     text-overflow: ellipsis;
+    padding: 6px;
 }
-
 .section3 .newsupdate .newsupdate1detail li {
     list-style: none;
     text-align: end;
@@ -1136,6 +1114,7 @@ header .calendar-current-date {
 
     .section3 .newsupdate .newsupdate1detail p {
         font-size: 14px;
+        padding: 16px;
     }
 }
 
@@ -1300,6 +1279,7 @@ footer {
     justify-content: space-evenly;
     padding: 30px 18px 18px; /* Combined padding */
     align-items: stretch;   /* Ensure all children stretch to the same height */
+    align-items:center;
 }
 
 footer div {
