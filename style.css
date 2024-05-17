@@ -7,30 +7,39 @@
 }
 
 main {
-    background-color: #ddd;
+    background-color: #dedede;
     /* padding: 10px; */
+    overflow-y: hidden;
 }
 
 
-
+.image{
+    width: 20px;
+    height: 20px;
+}
 .mehroon {
     background-color: #532d2d;
+    color: #532d2d;
 }
 
 .green {
     background-color: #4caf50;
+    color: #4caf50;
 }
 
 .blue {
     background-color: #2196f3;
+    color: #2196f3;
 }
 
 .gray {
     background-color: #9e9e9e;
+    color: #9e9e9e;
 }
 
 .pink {
     background-color: #e91e63;
+    color: #e91e63;
 }
 
 .arrow {
@@ -783,10 +792,11 @@ header .calendar-current-date {
     width: 100px;
 }
 
-.calender-info div {
+.calender-info span {
     display: flex;
-    height: 12px;
-    width: 12px;
+    flex-wrap: wrap;
+    height: 20px;
+    width: 20px;
     margin: 10px;
     border-radius: 50%;
     margin: 0 5px;
