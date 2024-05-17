@@ -103,6 +103,7 @@ main {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .topnav ul {
@@ -257,6 +258,7 @@ main {
 /* lower Header */
 .lowheader {
     background: linear-gradient(0deg, #6ACED9, #54bfbf, #2a8c82);
+    position: relative;
 }
 
 .lowheader ul {
@@ -265,6 +267,8 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    z-index: 100;
 }
 
 .lowheader ul li {
@@ -1010,6 +1014,8 @@ header .calendar-current-date {
     padding: 3px 8px;
     border: 0;
     margin: 3px;
+    background-color:rgb(18, 134, 134);
+    color: white;
 }
 
 .section3 .map strong {
@@ -1279,13 +1285,15 @@ footer {
     justify-content: space-evenly;
     padding: 30px 18px 18px; /* Combined padding */
     align-items: stretch;   /* Ensure all children stretch to the same height */
-    align-items:center;
+    /* align-items:center; */
 }
 
 footer div {
     flex: 1;
     padding: 10px;
     box-sizing: border-box;  /* Ensure padding and border are included in the element's total width and height */
+    align-items: stretch;   /* Ensure all children stretch to the same height */
+
 }
 
 footer p {
