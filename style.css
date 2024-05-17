@@ -12,6 +12,10 @@ main {
     overflow-y: hidden;
 }
 
+.hide {
+    display: none;
+}
+
 
 .image{
     width: 20px;
@@ -44,6 +48,7 @@ main {
 
 .arrow {
     fill: rgb(18, 134, 134);
+
 }
 
 .divider {
@@ -57,7 +62,24 @@ main {
 
 .dropdownmark {
     width: 14px;
+    align-items: center;
 }
+.image1{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+.image2{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+
+
+
+
 
 
 .topheader {
@@ -107,7 +129,6 @@ main {
 
 .topnav ul li a:hover {
     transition: 0.15s;
-    font-weight: bold;
     color: #2a8c82;
 }
 
@@ -122,18 +143,15 @@ main {
     width: 20px;
 }
 
-.search {
+/* .search {
     background-color: #2a8c82;
     cursor: pointer;
     border-radius: 10px;
 }
 
-.hide {
-    display: none;
-}
 
 .searchshow {
-    width: 100px;
+    width: 200px;
     display: block;
 
 }
@@ -158,7 +176,70 @@ main {
 
 .search input[type="text"]:focus {
     background-color: #2a8c82;
-}
+} */
+
+/* search */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+  }
+  
+  .input {
+    border-style: none;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    outline: none;
+    /* border-radius: 50%; */
+    transition: .5s ease-in-out;
+    background-color: #2a8c82;
+    box-shadow: 0px 0px 3px #f3f3f3;
+    padding-right: 40px;
+    color: #fff;
+  }
+  
+  .input::placeholder,
+  .input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+  }
+  
+  .input::placeholder {
+    color: #8f8f8f;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border-style: none;
+    border-radius: 50%;
+    pointer-events: painted;
+    background-color: transparent;
+    transition: .2s linear;
+  }
+  
+  .icon:focus ~ .input,
+  .input:focus {
+    box-shadow: none;
+    width: 250px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #2a8c82;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  
+
+
 
 
 
@@ -212,12 +293,13 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .lowheader ul li {
     list-style: none;
     color: white;
-    padding: 15px 10px;
+    padding: 15px 0px;
 }
 
 .lowheader ul li a {
@@ -230,11 +312,27 @@ main {
     color: white;
 }
 
-
 .dropdown {
     position: relative;
     display: inline-block;
     z-index: 100;
+    display: flex;
+}
+.dropdown a {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.dropdown a span{
+    align-items: center;
+
+}
+
+
+
+
+.dropdownmark {
+    display: block;           
 }
 
 .dropdown-toggle {
@@ -243,7 +341,7 @@ main {
 
 .dropdown:hover .dropdown-menu {
     display: block;
-    background-color: #2a8c82;
+    background-color: white;
 }
 
 .dropdown-menu,
@@ -252,29 +350,42 @@ main {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #fff;
+    background-color: #2a8c82;
     list-style: none;
     padding: 0;
-    box-shadow: 0 2px 5px #2a8c82;
-    ;
-
+    box-shadow: 0 2px 5px white;
+    z-index: 2000;
 }
 
 .dropdown-menu li {
     padding: 5px 10px;
-
+    z-index: 100;
 }
 
-.dropdown-menu a {
-    color: #333;
+.dropdown .dropdown-menu a {
+    align-items: center;
+    text-align:center ;
+    color: #2a8c82;
     text-decoration: none;
+    display: block; /* Ensure the link takes up the full width and height of the parent li */
+    width: 100%;   /* Make sure the anchor tag fills the entire list item */
+    height: 100%;  /* Make sure the anchor tag fills the entire list item */
 }
 
-.dropdown-menu a:hover {
+.dropdown-menu li:hover {
+    transition: 0.5s;
+    background-color: #2a8c82;
+}
+
+.dropdown-menu li:hover a {
+    transition: 0.5s;
     color: white;
-
 }
 
+
+.biggerzindex{
+    z-index: 1010;
+}
 
 
 
@@ -635,13 +746,24 @@ main {
     margin: 10px;
 }
 
-.BalochistanAssemblyboxbody ul li {
-    /* list-style: none; */
+.BalochistanAssemblybox .BalochistanAssemblyboxbody ul li {
+    padding: 4px;
+    list-style: none;
+}
+.BalochistanAssemblybox .BalochistanAssemblyboxbody ul li:hover {
+    background-color: #f5f8e5;
+    
+
 }
 
 .BalochistanAssemblyboxbody ul li a {
     color: rgb(18, 134, 134);
-    padding: 4px;
+    padding: 5px;
+}
+.BalochistanAssemblyboxbody ul li a:hover {
+    color:white ;
+    background-color:rgb(18, 134, 134) ;
+    border-radius: 10px;
 }
 
 
@@ -841,7 +963,7 @@ header .calendar-current-date {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 
 }
 
@@ -1162,14 +1284,15 @@ footer {
     color: white;
     display: flex;
     flex-wrap: wrap;
-    padding: 18px;
     justify-content: space-evenly;
-    align-items: center;
-    padding-top: 30px;
+    padding: 30px 18px 18px; /* Combined padding */
+    align-items: stretch;   /* Ensure all children stretch to the same height */
 }
 
 footer div {
+    flex: 1;
     padding: 10px;
+    box-sizing: border-box;  /* Ensure padding and border are included in the element's total width and height */
 }
 
 footer p {
@@ -1191,7 +1314,9 @@ footer a:hover {
 .firstdivfooter {
     display: flex;
     flex-direction: column;
-
+    flex: 1;  /* Ensure this div takes equal space */
+    justify-content: center;
+    align-items: center;
 }
 
 .firstdivfooter div {
@@ -1199,7 +1324,6 @@ footer a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 footer h3 {
@@ -1208,9 +1332,11 @@ footer h3 {
 
 .firstdivfooter img {
     width: 100px;
-    justify-content: center;
-    padding: 4PX;
+    padding: 4px;
 }
+
+
+
 
 
 /* copyrightfooter */

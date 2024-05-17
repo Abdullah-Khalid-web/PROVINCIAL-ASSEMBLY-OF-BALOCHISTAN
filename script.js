@@ -1,9 +1,59 @@
 // this is for the top header serch icon
+// function toggleSearch() {
+//     var searchInput = document.getElementById('searchInput');
+//     searchInput.classList.add('searchshow');
+
+// }
+// document.addEventListener('click', function(event) {
+//     console.log('Clicked at coordinates: (' + event.clientX + ', ' + event.clientY + ')');
+//     var searchInput = document.getElementById('searchInput');
+//     searchInput.classList.add('hide');
+// });
+
+
+
 function toggleSearch() {
     var searchInput = document.getElementById('searchInput');
-    searchInput.classList.add('searchshow');
-}
+  
+    // Toggle the class based on its current presence
+    searchInput.classList.toggle('searchshow');
+  }
+  
+  document.addEventListener('click', function(event) {
+    var searchInput = document.getElementById('searchInput');
+  
+    // Check if the click was outside the search input
+    if (!searchInput.contains(event.target)) {
+      searchInput.classList.remove('searchshow');
+    }
+  });
 
+
+
+
+// document.addEventListener('click', function(event) {
+//     if (event.target !== searchInput) {
+//         searchInput.classList.add('hide');
+//     }
+// }, { once: true });
+
+
+
+// function toggleSearch() {
+//     var searchInput = document.getElementById('searchInput');
+  
+//     // Toggle visibility class
+//     searchInput.classList.toggle('searchshow');
+  
+//     // Remove click event listener after first click outside
+//     document.addEventListener('click', function(event) {
+//       if (event.target !== searchInput) {
+//         searchInput.classList.remove('searchshow');
+//         document.removeEventListener('click', arguments.callee); // This line is changed
+//       }
+//     }, { once: true });
+//   }
+  
 
 
 
@@ -44,7 +94,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
         dot.addEventListener('click', () => currentSlide(index + 1));
     });
 });
+let slideIndex = 0;
+showSlides();
 
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 
 
 

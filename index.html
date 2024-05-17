@@ -32,6 +32,8 @@
 
 
 
+
+
     </style>
 </head>
 
@@ -52,9 +54,20 @@
                 </div>
                 <div class="topnavright">
                     <ul>
-                        <li class="search" onclick="toggleSearch()">
+                        <!-- <li class="search" onclick="toggleSearch()">
                             <input type="text" class="hide" id="searchInput" placeholder="Search...">
                             <img src="search.png" alt="Search Icon" id="searchIcon">
+                        </li> -->
+                        <li>
+                            <div class="input-wrapper">
+                                <button class="icon"> 
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px" width="25px">
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"></path>
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M22 22L20 20"></path>
+                                  </svg>
+                                </button>
+                                <input placeholder="search.." class="input" name="text" type="text">
+                              </div>
                         </li>
                         <li><img src="location.png" alt="">Zarghone Road Quetta </li>
                         <li><img src="phone.png" alt="">(081) 9201950</li>
@@ -74,7 +87,6 @@
 
         <div class="lowheader">
             <ul>
-                <li></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">About Assembly<span><img class="dropdownmark"
                                 src="dropdownmark.png" alt=""></span></a>
@@ -94,8 +106,8 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Committees<span><img class="dropdownmark"
-                                src="dropdownmark.png" alt=""></span></a>
+                    <a href="#" class="dropdown-toggle">Committees<span><img class="dropdownmark" src="dropdownmark.png"
+                                alt=""></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">List of Business</a></li>
                         <li><a href="#">Calendar</a></li>
@@ -112,8 +124,8 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Members<span><img class="dropdownmark"
-                                src="dropdownmark.png" alt=""></span></a>
+                    <a href="#" class="dropdown-toggle">Members<span><img class="dropdownmark" src="dropdownmark.png"
+                                alt=""></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">List of Business</a></li>
                         <li><a href="#">Calendar</a></li>
@@ -121,8 +133,8 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Cabinet<span><img class="dropdownmark"
-                                src="dropdownmark.png" alt=""></span></a>
+                    <a href="#" class="dropdown-toggle">Cabinet<span><img class="dropdownmark" src="dropdownmark.png"
+                                alt=""></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">List of Business</a></li>
                         <li><a href="#">Calendar</a></li>
@@ -134,19 +146,19 @@
                     <a href="#" class="dropdown-toggle">Media Center<span><img class="dropdownmark"
                                 src="dropdownmark.png" alt=""></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">List of Business</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Reports</a></li>
+                        <li><a class="biggerzindex" href="#">List of Business</a></li>
+                        <li><a class="biggerzindex" href="#">Calendar</a></li>
+                        <li><a class="biggerzindex" href="#">Reports</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Know Your Assembly<span><img class="dropdownmark"
+                    <span href="" class="dropdown-toggle">Know Your Assembly<span><img class="dropdownmark"
                                 src="dropdownmark.png" alt=""></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">List of Business</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Reports</a></li>
-                    </ul>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">List of Business</a></li>
+                            <li><a href="#">Calendar</a></li>
+                            <li><a href="#">Reports</a></li>
+                        </ul>
                 </li>
 
 
@@ -266,19 +278,19 @@
                 <div class="headernews">
                     <ul>
                         <li class="newsheaderli BalochistanAssemblyheadernews" onclick="BalochistanAssemblyvisible()">
-                            <img src="Assembly History.png" alt="">
+                            <img class="image1" src="Assembly History.png" alt="">
                             <p>Balochistan Assembly</p>
                         </li>
                         <li class="newsheaderli HouseBusinessheadernews" onclick="HouseBusinessvisible()">
-                            <img src="Act.png" alt="">
+                            <img class="image1" src="Act.png" alt="">
                             <p>House Business</p>
                         </li>
                         <li class="newsheaderli Committeeheadernews" onclick="Committeevisible()">
-                            <img src="Key Office Holders.png" alt="">
+                            <img class="image1" src="Key Office Holders.png" alt="">
                             <p>Committee</p>
                         </li>
                         <li class="newsheaderli Membersheadernews" onclick="Membersvisible()">
-                            <img src="Members.png" alt="">
+                            <img class="image1" src="Members.png" alt="">
                             <p>Members</p>
                         </li>
                     </ul>
@@ -294,9 +306,86 @@
 
                         <div class="BalochistanAssemblybox newsdetailBOX">
                             <div class="BalochistanAssemblyboxhead newsdetailBOXhead">
+                                <img class="image2" src="Act.png" alt="">
+                                <h2>Order of The Day / Verbatim</h2>
+                                <span><a href="#"><img class="arrow" src="arrow3.png" alt=""> </a></span>
+                            </div>
+
+                            <div class="BalochistanAssemblyboxbody newsdetailBOXbody">
+                                <p>The provincial government is now focused on the effective implementation of these
+                                    reforms to bring about tangible improvements in the education sector.</p>
+                                <ul>
+                                    <li><a href="#">FAQ's</a></li>
+                                    <li><a href="#">Contact US</a></li>
+                                    <li><a href="#">Pips Guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="BalochistanAssemblybox newsdetailBOX">
+                            <div class="BalochistanAssemblyboxhead newsdetailBOXhead">
+                                <img class="image2" src="Resolution.png" alt="">
+                                <h2>Acts Or Resolution</h2>
+                                <span><a href="#"><img class="arrow" src="arrow3.png" alt=""> </a></span>
+                            </div>
+                            <hr>
+                            <div class="BalochistanAssemblyboxbody newsdetailBOXbody">
+                                <p>The provincial government is now focused on the effective implementation of these
+                                    reforms to bring about tangible improvements in the education sector.</p>
+                                <ul>
+                                    <li><a href="#">FAQ's</a></li>
+                                    <li><a href="#">Contact US</a></li>
+                                    <li><a href="#">Pips Guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="BalochistanAssemblybox newsdetailBOX">
+                            <div class="BalochistanAssemblyboxhead newsdetailBOXhead">
+                                <img class="image2" src="Layer_1-2.png" alt="">
+                                <h2>Ordinance / Resolutions</h2>
+                                <span><a href="#"><img class="arrow" src="arrow3.png" alt=""> </a></span>
+                            </div>
+                            <hr>
+                            <div class="BalochistanAssemblyboxbody newsdetailBOXbody">
+                                <p>The provincial government is now focused on the effective implementation of these
+                                    reforms to bring about tangible improvements in the education sector.</p>
+                                <ul>
+                                    <li><a href="#">FAQ's</a></li>
+                                    <li><a href="#">Contact US</a></li>
+                                    <li><a href="#">Pips Guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="BalochistanAssemblybox newsdetailBOX ">
+                            <div class="BalochistanAssemblyboxhead newsdetailBOXhead">
+                                <img class="image2" src="Debate.png" alt="">
+                                <h2>Questions/ Call Attention Notices</h2>
+                                <span><a href="#"><img class="arrow" src="arrow3.png" alt=""> </a></span>
+                            </div>
+                            <hr>
+                            <div class="BalochistanAssemblyboxbody newsdetailBOXbody">
+                                <p>The provincial government is now focused on the effective implementation of these
+                                    reforms to bring about tangible improvements in the education sector.</p>
+                                <ul>
+                                    <li><a href="#">FAQ's</a></li>
+                                    <li><a href="#">Contact US</a></li>
+                                    <li><a href="#">Pips Guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsdetail2 hide">
+                    <div class="BalochistanAssembly newsdetailBOX">
+                        <p class="BalochistanAssemblyP newsdetailBOXP">Welcome to the House Business of Balochistan
+                            Website.
+                            An online guide to your elected representatives, activities of the House, Acts & Bills
+                            of the Assembly, as well as detail of Committees</p>
+
+                        <div class="BalochistanAssemblybox newsdetailBOX">
+                            <div class="BalochistanAssemblyboxhead newsdetailBOXhead">
                                 <img src="Act.png" alt="">
                                 <h2>Order of The Day / Verbatim</h2>
-                                <span><a href="#"><img class="arrow" src="arrow1.png" alt=""> </a></span>
+                                <span><a href="#"><img class="arrow" src="arrow3.png" alt=""> </a></span>
                             </div>
 
                             <div class="BalochistanAssemblyboxbody newsdetailBOXbody">
@@ -313,7 +402,7 @@
                             <div class="BalochistanAssemblyboxhead newsdetailBOXhead">
                                 <img src="Resolution.png" alt="">
                                 <h2>Acts Or Resolution</h2>
-                                <span><a href="#"><img class="arrow" src="arrow1.png" alt=""> </a></span>
+                                <span><a href="#"><img class="arrow" src="arrow3.png" alt=""> </a></span>
                             </div>
                             <hr>
                             <div class="BalochistanAssemblyboxbody newsdetailBOXbody">
@@ -330,7 +419,7 @@
                             <div class="BalochistanAssemblyboxhead newsdetailBOXhead">
                                 <img src="Layer_1-2.png" alt="">
                                 <h2>Ordinance / Resolutions</h2>
-                                <span><a href="#"><img class="arrow" src="arrow1.png" alt=""> </a></span>
+                                <span><a href="#"><img class="arrow" src="arrow3.png" alt=""> </a></span>
                             </div>
                             <hr>
                             <div class="BalochistanAssemblyboxbody newsdetailBOXbody">
@@ -347,7 +436,7 @@
                             <div class="BalochistanAssemblyboxhead newsdetailBOXhead">
                                 <img src="Debate.png" alt="">
                                 <h2>Questions/ Call Attention Notices</h2>
-                                <span><a href="#"><img class="arrow" src="arrow1.png" alt=""> </a></span>
+                                <span><a href="#"><img class="arrow" src="arrow3.png" alt=""> </a></span>
                             </div>
                             <hr>
                             <div class="BalochistanAssemblyboxbody newsdetailBOXbody">
@@ -362,9 +451,160 @@
                         </div>
                     </div>
                 </div>
-                <div class="newsdetail2 hide"></div>
-                <div class="newsdetail3 hide"></div>
-                <div class="newsdetail4 hide"></div>
+                <div class="newsdetail3 hide">
+                    <div class="BalochistanAssembly newsdetailBOX">
+                        <p class="BalochistanAssemblyP newsdetailBOXP">Welcome to the Committees of Balochistan
+                            Website.
+                            An online guide to your elected representatives, activities of the House, Acts & Bills
+                            of the Assembly, as well as detail of Committees</p>
+
+                        <div class="BalochistanAssemblybox newsdetailBOX">
+                            <div class="BalochistanAssemblyboxhead newsdetailBOXhead">
+                                <img src="Act.png" alt="">
+                                <h2>Order of The Day / Verbatim</h2>
+                                <span><a href="#"><img class="arrow" src="arrow3.png" alt=""> </a></span>
+                            </div>
+
+                            <div class="BalochistanAssemblyboxbody newsdetailBOXbody">
+                                <p>The provincial government is now focused on the effective implementation of these
+                                    reforms to bring about tangible improvements in the education sector.</p>
+                                <ul>
+                                    <li><a href="#">FAQ's</a></li>
+                                    <li><a href="#">Contact US</a></li>
+                                    <li><a href="#">Pips Guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="BalochistanAssemblybox newsdetailBOX">
+                            <div class="BalochistanAssemblyboxhead newsdetailBOXhead">
+                                <img src="Resolution.png" alt="">
+                                <h2>Acts Or Resolution</h2>
+                                <span><a href="#"><img class="arrow" src="arrow3.png" alt=""> </a></span>
+                            </div>
+                            <hr>
+                            <div class="BalochistanAssemblyboxbody newsdetailBOXbody">
+                                <p>The provincial government is now focused on the effective implementation of these
+                                    reforms to bring about tangible improvements in the education sector.</p>
+                                <ul>
+                                    <li><a href="#">FAQ's</a></li>
+                                    <li><a href="#">Contact US</a></li>
+                                    <li><a href="#">Pips Guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="BalochistanAssemblybox newsdetailBOX">
+                            <div class="BalochistanAssemblyboxhead newsdetailBOXhead">
+                                <img src="Layer_1-2.png" alt="">
+                                <h2>Ordinance / Resolutions</h2>
+                                <span><a href="#"><img class="arrow" src="arrow3.png" alt=""> </a></span>
+                            </div>
+                            <hr>
+                            <div class="BalochistanAssemblyboxbody newsdetailBOXbody">
+                                <p>The provincial government is now focused on the effective implementation of these
+                                    reforms to bring about tangible improvements in the education sector.</p>
+                                <ul>
+                                    <li><a href="#">FAQ's</a></li>
+                                    <li><a href="#">Contact US</a></li>
+                                    <li><a href="#">Pips Guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="BalochistanAssemblybox newsdetailBOX ">
+                            <div class="BalochistanAssemblyboxhead newsdetailBOXhead">
+                                <img src="Debate.png" alt="">
+                                <h2>Questions/ Call Attention Notices</h2>
+                                <span><a href="#"><img class="arrow" src="arrow3.png" alt=""> </a></span>
+                            </div>
+                            <hr>
+                            <div class="BalochistanAssemblyboxbody newsdetailBOXbody">
+                                <p>The provincial government is now focused on the effective implementation of these
+                                    reforms to bring about tangible improvements in the education sector.</p>
+                                <ul>
+                                    <li><a href="#">FAQ's</a></li>
+                                    <li><a href="#">Contact US</a></li>
+                                    <li><a href="#">Pips Guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsdetail4 hide">
+                    <div class="BalochistanAssembly newsdetailBOX">
+                        <p class="BalochistanAssemblyP newsdetailBOXP">Welcome to the Members of Balochistan
+                            Website.
+                            An online guide to your elected representatives, activities of the House, Acts & Bills
+                            of the Assembly, as well as detail of Committees</p>
+
+                        <div class="BalochistanAssemblybox newsdetailBOX">
+                            <div class="BalochistanAssemblyboxhead newsdetailBOXhead">
+                                <img src="Act.png" alt="">
+                                <h2>Order of The Day / Verbatim</h2>
+                                <span><a href="#"><img class="arrow" src="arrow3.png" alt=""> </a></span>
+                            </div>
+
+                            <div class="BalochistanAssemblyboxbody newsdetailBOXbody">
+                                <p>The provincial government is now focused on the effective implementation of these
+                                    reforms to bring about tangible improvements in the education sector.</p>
+                                <ul>
+                                    <li><a href="#">FAQ's</a></li>
+                                    <li><a href="#">Contact US</a></li>
+                                    <li><a href="#">Pips Guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="BalochistanAssemblybox newsdetailBOX">
+                            <div class="BalochistanAssemblyboxhead newsdetailBOXhead">
+                                <img src="Resolution.png" alt="">
+                                <h2>Acts Or Resolution</h2>
+                                <span><a href="#"><img class="arrow" src="arrow3.png" alt=""> </a></span>
+                            </div>
+                            <hr>
+                            <div class="BalochistanAssemblyboxbody newsdetailBOXbody">
+                                <p>The provincial government is now focused on the effective implementation of these
+                                    reforms to bring about tangible improvements in the education sector.</p>
+                                <ul>
+                                    <li><a href="#">FAQ's</a></li>
+                                    <li><a href="#">Contact US</a></li>
+                                    <li><a href="#">Pips Guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="BalochistanAssemblybox newsdetailBOX">
+                            <div class="BalochistanAssemblyboxhead newsdetailBOXhead">
+                                <img src="Layer_1-2.png" alt="">
+                                <h2>Ordinance / Resolutions</h2>
+                                <span><a href="#"><img class="arrow" src="arrow3.png" alt=""> </a></span>
+                            </div>
+                            <hr>
+                            <div class="BalochistanAssemblyboxbody newsdetailBOXbody">
+                                <p>The provincial government is now focused on the effective implementation of these
+                                    reforms to bring about tangible improvements in the education sector.</p>
+                                <ul>
+                                    <li><a href="#">FAQ's</a></li>
+                                    <li><a href="#">Contact US</a></li>
+                                    <li><a href="#">Pips Guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="BalochistanAssemblybox newsdetailBOX ">
+                            <div class="BalochistanAssemblyboxhead newsdetailBOXhead">
+                                <img src="Debate.png" alt="">
+                                <h2>Questions/ Call Attention Notices</h2>
+                                <span><a href="#"><img class="arrow" src="arrow3.png" alt=""> </a></span>
+                            </div>
+                            <hr>
+                            <div class="BalochistanAssemblyboxbody newsdetailBOXbody">
+                                <p>The provincial government is now focused on the effective implementation of these
+                                    reforms to bring about tangible improvements in the education sector.</p>
+                                <ul>
+                                    <li><a href="#">FAQ's</a></li>
+                                    <li><a href="#">Contact US</a></li>
+                                    <li><a href="#">Pips Guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             </div>
 
@@ -395,11 +635,11 @@
                         </ul>
                     </div>
                     <div class="newsupdatedetail1 newsupdate1detail">
-                        <div class="newsupdate1detailheader1" >
+                        <div class="newsupdate1detailheader1">
 
-                            <button class="carousel-control-prev" >&#10094;</button>
+                            <button class="carousel-control-prev">&#10094;</button>
                             <h2><i>Tuesday, January 30,2024</i></h2>
-                            <button class="carousel-control-next" >&#10095;</button>
+                            <button class="carousel-control-next">&#10095;</button>
                         </div>
                         <hr>
                         <p>
@@ -460,12 +700,198 @@
                     </div>
                     <div class="newsupdatedetail2 hide">
                         <h1>Press Release</h1>
+                        <div class="newsupdate1detailheader1">
+
+                            <button class="carousel-control-prev">&#10094;</button>
+                            <h2><i>Tuesday, January 30,2024</i></h2>
+                            <button class="carousel-control-next">&#10095;</button>
+                        </div>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
                     </div>
                     <div class="newsupdatedetail3 hide">
                         <h1>Publications</h1>
+                        <div class="newsupdate1detailheader1">
+
+                            <button class="carousel-control-prev">&#10094;</button>
+                            <h2><i>Tuesday, January 30,2024</i></h2>
+                            <button class="carousel-control-next">&#10095;</button>
+                        </div>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
                     </div>
                     <div class="newsupdatedetail4 hide">
                         <h1>Jobs/Tenders</h1>
+                        <div class="newsupdate1detailheader1">
+
+                            <button class="carousel-control-prev">&#10094;</button>
+                            <h2><i>Tuesday, January 30,2024</i></h2>
+                            <button class="carousel-control-next">&#10095;</button>
+                        </div>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
+                        <hr>
+                        <p>
+                            Consequent upon dissolution of the Provincial Assembly of Balochistan, Malik Sikandar Khan
+                            Advocate has ceased to hold office of the Leader of the Opposition, Balochistan Provincial
+                            Assembly.
+                        </p>
+                        <li><a href="#">Read More ></a></li>
                     </div>
                 </div>
             </div>
@@ -527,8 +953,8 @@
         <div class="firstdivfooter">
             <div>
                 <img src="logo2.png" alt="">
-                <h3>PROVINCIAL ASSEMBLY OF BALOCHISTAN</h3>
-                <h3>بلوچستان صوبائی اسمبلی</h3>
+                <h5>PROVINCIAL ASSEMBLY OF BALOCHISTAN</h5>
+                <h5>بلوچستان صوبائی اسمبلی</h5>
                 <br>
             </div>
             <p><a href="#">Zarghon Road,Quetta Pakistan</a></p>
