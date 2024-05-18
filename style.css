@@ -165,17 +165,15 @@ main {
     width: 30px;
     padding: 10px;
     outline: none;
-    /* border-radius: 50%; */
     transition: .5s ease-in-out;
     background-color: #2a8c82;
-    box-shadow: 0px 0px 3px #f3f3f3;
+    box-shadow: 0px 0px 3px #2a8c82;
     padding-right: 40px;
-    color: #fff;
+    color: #000000;
   }
   
   .input::placeholder,
   .input {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 17px;
   }
   
@@ -346,15 +344,21 @@ main {
     width: 100%;   /* Make sure the anchor tag fills the entire list item */
     height: 100%;  /* Make sure the anchor tag fills the entire list item */
 }
+.dropdown-menu{
 
+    z-index: 10000000;
+}
 .dropdown-menu li:hover {
     transition: 0.5s;
     background-color: #2a8c82;
 }
-
+.dropdown-menu li a{
+}
 .dropdown-menu li:hover a {
+    z-index: 10000000;
     transition: 0.5s;
     color: white;
+
 }
 
 
